@@ -1,17 +1,17 @@
 <div class="card">
   <div class="card-body">
-    <form>
+    <form (ngSubmit)="processForm()">
 
       <div class="mb-2">
         <label class="form-label">Name: </label>
         <input type="text" class="form-control" placeholder="Your name"
-               [(ngModel)]="person.name">
+               name="name" [(ngModel)]="person.name">
       </div>
 
       <div>
         <label class="form-label">Age: </label>
         <input type="number" class="form-control" placeholder="Your age"
-               [(ngModel)]="person.age">
+               name="age" [(ngModel)]="person.age">
       </div>
 
       <button class="btn btn-primary">

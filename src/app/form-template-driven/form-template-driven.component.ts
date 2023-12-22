@@ -11,4 +11,8 @@ export class FormTemplateDrivenComponent {
     age: ''
   }
 
+  processForm() {
+    // Aqui se debería buscar o almacenar la info del form. en una db
+    console.log(this.person);
+  }
 }
