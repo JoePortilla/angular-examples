@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import {Component} from '@angular/core';
 
 @Component({
   selector: 'app-directive-ngswitch',
@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrl: './directive-ngswitch.component.css'
 })
 export class DirectiveNgswitchComponent {
-
+  dayNumber?: string;
 }

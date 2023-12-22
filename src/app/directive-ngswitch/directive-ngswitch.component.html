@@ -1,1 +1,21 @@
-<p>directive-ngswitch works!</p>
+<div class="container">
+  <input type="text" class="form-control"
+         #newDay>
+  <button class="btn btn-primary mt-2 mb-4"
+          (click)="dayNumber = newDay.value">
+    Show day
+  </button>
+
+  <div [ngSwitch]="dayNumber"
+       *ngIf="dayNumber">
+    <span *ngSwitchCase="'1'">Monday</span>
+    <span *ngSwitchCase="'2'">Tuesday</span>
+    <span *ngSwitchCase="'3'">Wednesday</span>
+    <span *ngSwitchCase="'4'">Thursday</span>
+    <span *ngSwitchCase="'5'">Friday</span>
+    <span *ngSwitchCase="'6'">Saturday</span>
+    <span *ngSwitchCase="'7'">Sunday</span>
+    <span *ngSwitchDefault>Invalid</span>
+  </div>
+</div>
+
