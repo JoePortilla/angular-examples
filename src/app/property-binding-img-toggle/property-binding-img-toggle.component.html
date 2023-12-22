@@ -1,1 +1,18 @@
-<p>property-binding-img-toggle works!</p>
+<div>
+  <button class="btn btn-primary"
+          (click)="img_path=img_color_path">
+    Show color
+  </button>
+  <button class="btn btn-primary"
+          (click)="img_path=img_color_trace_path">
+    Show color with trace
+  </button>
+  <button class="btn btn-danger"
+          (click)="img_path=img_trace_path">
+    Show only trace
+  </button>
+</div>
+
+
+<img *ngIf="img_path!=''"
+     [ngSrc]="img_path" width="64" height="64" alt="image">

@@ -17,8 +17,11 @@ import {
 import {
   ClassBindingDirectTxtColorComponent
 } from './class-binding-direct-txt-color/class-binding-direct-txt-color.component';
-import { PropertyBindingBtnDisabledComponent } from './property-binding-btn-disabled/property-binding-btn-disabled.component';
-import { PropertyBindingImgToggleComponent } from './property-binding-img-toggle/property-binding-img-toggle.component';
+import {
+  PropertyBindingBtnDisabledComponent
+} from './property-binding-btn-disabled/property-binding-btn-disabled.component';
+import {PropertyBindingImgToggleComponent} from './property-binding-img-toggle/property-binding-img-toggle.component';
+import {NgOptimizedImage} from "@angular/common";
 
 @NgModule({
   declarations: [
@@ -36,7 +39,8 @@ import { PropertyBindingImgToggleComponent } from './property-binding-img-toggle
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    NgOptimizedImage
   ],
   providers: [],
   bootstrap: [AppComponent]
