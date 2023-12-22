@@ -1,0 +1,25 @@
+<input type="text" class="form-control" placeholder="Write your name"
+       #templateVariable>
+
+<button class="btn btn-primary"
+        (click)="showAlert(templateVariable.value)">
+  Show Alert
+</button>
+
+<div class="alert alert-primary mt-4"
+     *ngIf="openNotification;
+     else initialNotification">
+  
+  <p>A message was sent</p>
+
+  <button class="btn btn-danger"
+          (click)="openNotification=false">
+    Close notification
+  </button>
+</div>
+
+<ng-template #initialNotification>
+  <div class="alert alert-primary mt-4">
+    Please write a name
+  </div>
+</ng-template>

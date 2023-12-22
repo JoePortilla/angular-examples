@@ -23,6 +23,9 @@ import {
 import {PropertyBindingImgToggleComponent} from './property-binding-img-toggle/property-binding-img-toggle.component';
 import {NgOptimizedImage} from "@angular/common";
 import { TemplateVariableComponent } from './template-variable/template-variable.component';
+import { DirectiveNgifComponent } from './directive-ngif/directive-ngif.component';
+import { DirectiveNgforComponent } from './directive-ngfor/directive-ngfor.component';
+import { DirectiveNgswitchComponent } from './directive-ngswitch/directive-ngswitch.component';
 
 @NgModule({
   declarations: [
@@ -37,7 +40,10 @@ import { TemplateVariableComponent } from './template-variable/template-variable
     ClassBindingDirectTxtColorComponent,
     PropertyBindingBtnDisabledComponent,
     PropertyBindingImgToggleComponent,
-    TemplateVariableComponent
+    TemplateVariableComponent,
+    DirectiveNgifComponent,
+    DirectiveNgforComponent,
+    DirectiveNgswitchComponent
   ],
   imports: [
     BrowserModule,
