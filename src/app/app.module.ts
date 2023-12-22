@@ -22,10 +22,12 @@ import {
 } from './property-binding-btn-disabled/property-binding-btn-disabled.component';
 import {PropertyBindingImgToggleComponent} from './property-binding-img-toggle/property-binding-img-toggle.component';
 import {NgOptimizedImage} from "@angular/common";
-import { TemplateVariableComponent } from './template-variable/template-variable.component';
-import { DirectiveNgifComponent } from './directive-ngif/directive-ngif.component';
-import { DirectiveNgforComponent } from './directive-ngfor/directive-ngfor.component';
-import { DirectiveNgswitchComponent } from './directive-ngswitch/directive-ngswitch.component';
+import {TemplateVariableComponent} from './template-variable/template-variable.component';
+import {DirectiveNgifComponent} from './directive-ngif/directive-ngif.component';
+import {DirectiveNgforComponent} from './directive-ngfor/directive-ngfor.component';
+import {DirectiveNgswitchComponent} from './directive-ngswitch/directive-ngswitch.component';
+import {FormTemplateDrivenComponent} from './form-template-driven/form-template-driven.component';
+import {FormsModule} from "@angular/forms";
 
 @NgModule({
   declarations: [
@@ -43,12 +45,14 @@ import { DirectiveNgswitchComponent } from './directive-ngswitch/directive-ngswi
     TemplateVariableComponent,
     DirectiveNgifComponent,
     DirectiveNgforComponent,
-    DirectiveNgswitchComponent
+    DirectiveNgswitchComponent,
+    FormTemplateDrivenComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    NgOptimizedImage
+    NgOptimizedImage,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
