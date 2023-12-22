@@ -22,6 +22,7 @@ import {
 } from './property-binding-btn-disabled/property-binding-btn-disabled.component';
 import {PropertyBindingImgToggleComponent} from './property-binding-img-toggle/property-binding-img-toggle.component';
 import {NgOptimizedImage} from "@angular/common";
+import { TemplateVariableComponent } from './template-variable/template-variable.component';
 
 @NgModule({
   declarations: [
@@ -35,7 +36,8 @@ import {NgOptimizedImage} from "@angular/common";
     ClassBindingMultipleBtnDisabledComponent,
     ClassBindingDirectTxtColorComponent,
     PropertyBindingBtnDisabledComponent,
-    PropertyBindingImgToggleComponent
+    PropertyBindingImgToggleComponent,
+    TemplateVariableComponent
   ],
   imports: [
     BrowserModule,
