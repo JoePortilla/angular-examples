@@ -28,6 +28,7 @@ import {DirectiveNgforComponent} from './directive-ngfor/directive-ngfor.compone
 import {DirectiveNgswitchComponent} from './directive-ngswitch/directive-ngswitch.component';
 import {FormTemplateDrivenComponent} from './form-template-driven/form-template-driven.component';
 import {FormsModule} from "@angular/forms";
+import { FormTemplateDrivenValidationComponent } from './form-template-driven-validation/form-template-driven-validation.component';
 
 @NgModule({
   declarations: [
@@ -46,7 +47,8 @@ import {FormsModule} from "@angular/forms";
     DirectiveNgifComponent,
     DirectiveNgforComponent,
     DirectiveNgswitchComponent,
-    FormTemplateDrivenComponent
+    FormTemplateDrivenComponent,
+    FormTemplateDrivenValidationComponent
   ],
   imports: [
     BrowserModule,

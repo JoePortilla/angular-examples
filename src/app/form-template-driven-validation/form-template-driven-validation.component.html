@@ -1,0 +1,30 @@
+<div class="card">
+  <div class="card-body">
+    <form (ngSubmit)="processForm()">
+
+      <div class="mb-2">
+        <label class="form-label">Name: </label>
+
+        <input type="text" class="form-control" placeholder="Your name"
+               name="name" [(ngModel)]="person.name"
+               required #name="ngModel">
+
+        <div class="alert alert-danger"
+             [hidden]="name.valid || name.pristine">
+          The name is required
+        </div>
+      </div>
+
+      <div>
+        <label class="form-label">Age: </label>
+        <input type="number" class="form-control" placeholder="Your age"
+               name="age" [(ngModel)]="person.age">
+      </div>
+
+      <button class="btn btn-primary">
+        Send
+      </button>
+
+    </form>
+  </div>
+</div>
