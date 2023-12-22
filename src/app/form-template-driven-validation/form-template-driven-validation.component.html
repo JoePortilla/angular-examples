@@ -1,6 +1,7 @@
 <div class="card">
   <div class="card-body">
-    <form (ngSubmit)="processForm()">
+    <form (ngSubmit)="processForm()"
+          #formContact="ngForm">
 
       <div class="mb-2">
         <label class="form-label">Name: </label>
@@ -21,10 +22,15 @@
                name="age" [(ngModel)]="person.age">
       </div>
 
-      <button class="btn btn-primary">
+      <button class="btn btn-primary"
+              [disabled]="formContact.invalid">
         Send
       </button>
 
     </form>
   </div>
 </div>
+
+Form validation status: {{ formContact.valid }}
+<br>
+Name variable validation status: {{ name.valid }}
