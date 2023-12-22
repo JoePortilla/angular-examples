@@ -1,0 +1,13 @@
+<p>Un objeto con formato atributo:valor [class]=&#123;'disabled':button_disabled&#125;</p>
+
+<div>
+  <button class="btn btn-warning"
+          (click)="button_disabled=!button_disabled">
+    Enable/Disable
+  </button>
+
+  <button class="btn btn-secondary"
+          [class]="{'disabled':button_disabled}">
+    Anything
+  </button>
+</div>

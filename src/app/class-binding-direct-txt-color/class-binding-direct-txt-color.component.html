@@ -1,0 +1,20 @@
+<p [class]="text_color">
+  Text color depending on 'text_color' class: {{ text_color }}
+</p>
+
+<div>
+  <button class="btn btn-danger"
+          (click)="text_color='text-danger'">
+    Red Color
+  </button>
+  <button class="btn btn-success"
+          (click)="text_color='text-success'">
+    Green Color
+  </button>
+  <button class="btn btn-primary"
+          (click)="text_color='text-primary'">
+    Blue Color
+  </button>
+</div>
+
+

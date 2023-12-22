@@ -1,0 +1,13 @@
+<p>Acceder a la clase como propiedad [class.disabled]="button_disabled"</p>
+
+<div>
+  <button class="btn btn-warning"
+          (click)="button_disabled=!button_disabled">
+    Enable/Disable
+  </button>
+
+  <button class="btn btn-secondary"
+          [class.disabled]="button_disabled">
+    Anything
+  </button>
+</div>
