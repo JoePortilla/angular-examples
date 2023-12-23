@@ -34,6 +34,8 @@ import {
 import {FormReactiveComponent} from './form-reactive/form-reactive.component';
 import {FormReactiveFormgroupComponent} from './form-reactive-formgroup/form-reactive-formgroup.component';
 import {FormReactiveFormbuilderComponent} from './form-reactive-formbuilder/form-reactive-formbuilder.component';
+import { FatherComponent } from './input/father/father.component';
+import { ChildComponent } from './input/child/child.component';
 
 @NgModule({
   declarations: [
@@ -56,7 +58,9 @@ import {FormReactiveFormbuilderComponent} from './form-reactive-formbuilder/form
     FormTemplateDrivenValidationComponent,
     FormReactiveComponent,
     FormReactiveFormgroupComponent,
-    FormReactiveFormbuilderComponent
+    FormReactiveFormbuilderComponent,
+    FatherComponent,
+    ChildComponent
   ],
   imports: [
     BrowserModule,

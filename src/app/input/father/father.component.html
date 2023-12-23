@@ -1,0 +1,9 @@
+<h4>Parent</h4>
+Variable: {{ parentData }}
+<br>
+Form:
+<input type="text" class="form-control"
+       [(ngModel)]="parentFormInput">
+
+<app-child [inheritedData]="parentData"
+           [inheritedForm]="parentFormInput"/>
