@@ -1,5 +1,5 @@
 import {Component} from '@angular/core';
-import {FormControl, FormGroup, Validators} from "@angular/forms";
+import {FormBuilder, FormControl, FormGroup, Validators} from "@angular/forms";
 
 @Component({
   selector: 'app-form-reactive-formbuilder',
@@ -7,14 +7,18 @@ import {FormControl, FormGroup, Validators} from "@angular/forms";
   styleUrl: './form-reactive-formbuilder.component.css'
 })
 export class FormReactiveFormbuilderComponent {
-// Form Instance
-  formUser = new FormGroup({
-    // Inputs Instance
-    'name': new FormControl('',
-      [Validators.required]),
-    'mail': new FormControl('',
-      [Validators.required, Validators.email])
-  });
+  // Injection
+  constructor(private fb: FormBuilder) {
+
+  }
+
+  // Form Builder
+  formUser = this.fb.group({
+    'name': ['',
+      [Validators.required]],
+    'mail': ['',
+      [Validators.required, Validators.email]]
+  })
 
   // Getters
   get name() {
