@@ -32,6 +32,7 @@ import {
   FormTemplateDrivenValidationComponent
 } from './form-template-driven-validation/form-template-driven-validation.component';
 import {FormReactiveComponent} from './form-reactive/form-reactive.component';
+import { FormReactiveValidatorsComponent } from './form-reactive-validators/form-reactive-validators.component';
 
 @NgModule({
   declarations: [
@@ -52,7 +53,8 @@ import {FormReactiveComponent} from './form-reactive/form-reactive.component';
     DirectiveNgswitchComponent,
     FormTemplateDrivenComponent,
     FormTemplateDrivenValidationComponent,
-    FormReactiveComponent
+    FormReactiveComponent,
+    FormReactiveValidatorsComponent
   ],
   imports: [
     BrowserModule,
