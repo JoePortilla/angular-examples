@@ -33,6 +33,7 @@ import {
 } from './form-template-driven-validation/form-template-driven-validation.component';
 import {FormReactiveComponent} from './form-reactive/form-reactive.component';
 import { FormReactiveValidatorsComponent } from './form-reactive-validators/form-reactive-validators.component';
+import { FormReactiveFormbuilderComponent } from './form-reactive-formbuilder/form-reactive-formbuilder.component';
 
 @NgModule({
   declarations: [
@@ -54,7 +55,8 @@ import { FormReactiveValidatorsComponent } from './form-reactive-validators/form
     FormTemplateDrivenComponent,
     FormTemplateDrivenValidationComponent,
     FormReactiveComponent,
-    FormReactiveValidatorsComponent
+    FormReactiveValidatorsComponent,
+    FormReactiveFormbuilderComponent
   ],
   imports: [
     BrowserModule,

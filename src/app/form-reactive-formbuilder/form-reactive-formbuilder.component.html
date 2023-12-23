@@ -1,0 +1,53 @@
+<div class="card">
+  <div class="card-body">
+    <!--Form Group-->
+    <form [formGroup]="formUser" (ngSubmit)="processForm()">
+      <!--Box-->
+      <div class="mb-2">
+        <!--Box Label-->
+        <label class="form-label">Name</label>
+        <!--Box Text-->
+        <input type="text" class="form-control" placeholder="Write your name"
+               formControlName="name">
+        <!--Validation alerts-->
+        <div class="alert alert-danger"
+             [hidden]="name.valid || name.pristine">
+          <span *ngIf="name.errors?.['required']">The name is required</span>
+        </div>
+      </div>
+
+      <!--Box-->
+      <div class="mb-2">
+        <!--Form Label-->
+        <label class="form-label">Email</label>
+        <!--Text Box-->
+        <input type="email" class="form-control" placeholder="Write your mail"
+               formControlName="mail">
+        <!--Validation alerts-->
+        <div class="alert alert-danger"
+             [hidden]="mail.valid || mail.pristine">
+          <span *ngIf="mail.errors?.['required']">The email is required</span>
+          <span *ngIf="mail.errors?.['email']">The email format must be valid</span>
+        </div>
+
+      </div>
+
+      <button class="btn btn-primary"
+              [disabled]="formUser.invalid">
+        Send
+      </button>
+
+    </form>
+  </div>
+</div>
+
+<h1>Access to the form group data</h1>
+Access to the values of the form: {{ formUser.value|json }}
+<h2>Access to the raw properties</h2>
+Access to the property name: {{ formUser.get('name')?.value }}
+<br>
+Access to the property mail: {{ formUser.get('mail')?.value }}
+<h2>Access to the properties with get</h2>
+Access to the property name: {{ name.value }}
+<br>
+Access to the property mail: {{ mail.value }}
