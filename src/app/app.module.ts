@@ -27,8 +27,11 @@ import {DirectiveNgifComponent} from './directive-ngif/directive-ngif.component'
 import {DirectiveNgforComponent} from './directive-ngfor/directive-ngfor.component';
 import {DirectiveNgswitchComponent} from './directive-ngswitch/directive-ngswitch.component';
 import {FormTemplateDrivenComponent} from './form-template-driven/form-template-driven.component';
-import {FormsModule} from "@angular/forms";
-import { FormTemplateDrivenValidationComponent } from './form-template-driven-validation/form-template-driven-validation.component';
+import {FormsModule, ReactiveFormsModule} from "@angular/forms";
+import {
+  FormTemplateDrivenValidationComponent
+} from './form-template-driven-validation/form-template-driven-validation.component';
+import {FormReactiveComponent} from './form-reactive/form-reactive.component';
 
 @NgModule({
   declarations: [
@@ -48,13 +51,15 @@ import { FormTemplateDrivenValidationComponent } from './form-template-driven-va
     DirectiveNgforComponent,
     DirectiveNgswitchComponent,
     FormTemplateDrivenComponent,
-    FormTemplateDrivenValidationComponent
+    FormTemplateDrivenValidationComponent,
+    FormReactiveComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     NgOptimizedImage,
-    FormsModule
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
