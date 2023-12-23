@@ -2,12 +2,12 @@ import {Component} from '@angular/core';
 import {FormControl, FormGroup, Validators} from "@angular/forms";
 
 @Component({
-  selector: 'app-form-reactive-validators',
-  templateUrl: './form-reactive-validators.component.html',
-  styleUrl: './form-reactive-validators.component.css'
+  selector: 'app-form-reactive-formgroup',
+  templateUrl: './form-reactive-formgroup.component.html',
+  styleUrl: './form-reactive-formgroup.component.css'
 })
-export class FormReactiveValidatorsComponent {
-  // Form Instance
+export class FormReactiveFormgroupComponent {
+  // Form Group Instance
   formUser = new FormGroup({
     // Inputs Instance
     'name': new FormControl('',
