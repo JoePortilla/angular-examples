@@ -6,6 +6,6 @@ import {Component} from '@angular/core';
   styleUrl: './father.component.css'
 })
 export class FatherComponent {
-  parentData = "Parent Data";
+  parentData = "Parent Variable";
   parentFormInput: string = '';
 }
