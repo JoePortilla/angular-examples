@@ -42,6 +42,9 @@ import { AddMessagesComponent } from './service/add-messages/add-messages.compon
 import { ListMessagesComponent } from './service/list-messages/list-messages.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { HomeComponent } from './home/home.component';
+import { RouteParameterComponent } from './route-parameter/route-parameter.component';
+import { ParentRouteComponent } from './childrenRoutes/parent-route/parent-route.component';
+import { ChildRouteComponent } from './childrenRoutes/child-route/child-route.component';
 
 @NgModule({
   declarations: [
@@ -72,7 +75,10 @@ import { HomeComponent } from './home/home.component';
     AddMessagesComponent,
     ListMessagesComponent,
     PageNotFoundComponent,
-    HomeComponent
+    HomeComponent,
+    RouteParameterComponent,
+    ParentRouteComponent,
+    ChildRouteComponent
   ],
   imports: [
     BrowserModule,

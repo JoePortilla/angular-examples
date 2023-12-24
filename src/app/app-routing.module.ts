@@ -5,20 +5,19 @@ import {InterpolationInterfaceComponent} from "./interpolation-interface/interpo
 import {InterpolationVariableComponent} from "./interpolation-variable/interpolation-variable.component";
 import {PageNotFoundComponent} from "./page-not-found/page-not-found.component";
 import {HomeComponent} from "./home/home.component";
+import {RouteParameterComponent} from "./route-parameter/route-parameter.component";
+import {ParentRouteComponent} from "./childrenRoutes/parent-route/parent-route.component";
+import {ChildRouteComponent} from "./childrenRoutes/child-route/child-route.component";
 
 const routes: Routes = [
   {
     path: '',
-    redirectTo: '/home',
+    redirectTo: 'home',
     pathMatch: 'full'
   },
   {
     path: 'home',
     component: HomeComponent
-  },
-  {
-    path: '**',
-    component: PageNotFoundComponent
   },
   {
     path: 'interpolation-interface',
@@ -27,6 +26,21 @@ const routes: Routes = [
   {
     path: 'interpolation-variable',
     component: InterpolationVariableComponent
+  },
+  {
+    path: 'hello/:route-parameter',
+    component: RouteParameterComponent
+
+  },
+  {
+    path: 'parent',
+    component: ParentRouteComponent,
+    children: [
+      {
+        path: 'child',
+        component: ChildRouteComponent
+      }
+    ]
   }
 
 ];
