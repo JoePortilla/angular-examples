@@ -34,17 +34,17 @@ import {
 import {FormReactiveComponent} from './form-reactive/form-reactive.component';
 import {FormReactiveFormgroupComponent} from './form-reactive-formgroup/form-reactive-formgroup.component';
 import {FormReactiveFormbuilderComponent} from './form-reactive-formbuilder/form-reactive-formbuilder.component';
-import { FatherComponent } from './input/father/father.component';
-import { ChildComponent } from './input/child/child.component';
-import { Father2Component } from './output/father2/father2.component';
-import { Child2Component } from './output/child2/child2.component';
-import { AddMessagesComponent } from './service/add-messages/add-messages.component';
-import { ListMessagesComponent } from './service/list-messages/list-messages.component';
-import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
-import { HomeComponent } from './home/home.component';
-import { RouteParameterComponent } from './route-parameter/route-parameter.component';
-import { ParentRouteComponent } from './childrenRoutes/parent-route/parent-route.component';
-import { ChildRouteComponent } from './childrenRoutes/child-route/child-route.component';
+import {FatherComponent} from './input/father/father.component';
+import {ChildComponent} from './input/child/child.component';
+import {Father2Component} from './output/father2/father2.component';
+import {Child2Component} from './output/child2/child2.component';
+import {AddMessagesComponent} from './service/add-messages/add-messages.component';
+import {ListMessagesComponent} from './service/list-messages/list-messages.component';
+import {PageNotFoundComponent} from './page-not-found/page-not-found.component';
+import {HomeComponent} from './home/home.component';
+import {RouteParameterComponent} from './route-parameter/route-parameter.component';
+import {ParentRouteComponent} from './childrenRoutes/parent-route/parent-route.component';
+import {ChildRouteComponent} from './childrenRoutes/child-route/child-route.component';
 
 @NgModule({
   declarations: [
@@ -78,7 +78,7 @@ import { ChildRouteComponent } from './childrenRoutes/child-route/child-route.co
     HomeComponent,
     RouteParameterComponent,
     ParentRouteComponent,
-    ChildRouteComponent
+    ChildRouteComponent,
   ],
   imports: [
     BrowserModule,
