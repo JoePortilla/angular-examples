@@ -40,6 +40,8 @@ import { Father2Component } from './output/father2/father2.component';
 import { Child2Component } from './output/child2/child2.component';
 import { AddMessagesComponent } from './service/add-messages/add-messages.component';
 import { ListMessagesComponent } from './service/list-messages/list-messages.component';
+import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+import { HomeComponent } from './home/home.component';
 
 @NgModule({
   declarations: [
@@ -68,7 +70,9 @@ import { ListMessagesComponent } from './service/list-messages/list-messages.com
     Father2Component,
     Child2Component,
     AddMessagesComponent,
-    ListMessagesComponent
+    ListMessagesComponent,
+    PageNotFoundComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
