@@ -1,9 +1,5 @@
 import {NgModule} from '@angular/core';
 import {RouterModule, Routes} from '@angular/router';
-import {AppComponent} from "./app.component";
-import {InterpolationInterfaceComponent} from "./interpolation-interface/interpolation-interface.component";
-import {InterpolationVariableComponent} from "./interpolation-variable/interpolation-variable.component";
-import {PageNotFoundComponent} from "./page-not-found/page-not-found.component";
 import {HomeComponent} from "./home/home.component";
 import {RouteParameterComponent} from "./route-parameter/route-parameter.component";
 import {ParentRouteComponent} from "./childrenRoutes/parent-route/parent-route.component";
@@ -20,29 +16,31 @@ const routes: Routes = [
     component: HomeComponent
   },
   {
-    path: 'interpolation-interface',
-    component: InterpolationInterfaceComponent
-  },
-  {
-    path: 'interpolation-variable',
-    component: InterpolationVariableComponent
-  },
-  {
+    // http://localhost:4200/hello/joe
     path: 'hello/:route-parameter',
     component: RouteParameterComponent
 
   },
   {
+    // http://localhost:4200/parent
     path: 'parent',
     component: ParentRouteComponent,
     children: [
       {
+        // http://localhost:4200/parent/child
         path: 'child',
         component: ChildRouteComponent
       }
     ]
+  },
+  {
+    path: 'blog',
+    loadChildren: () => import('./modules/blog/blog.module').then(m => m.BlogModule)
+  },
+  {
+    path: 'contact',
+    loadChildren: () => import('./modules/contact/contact.module').then(m => m.ContactModule)
   }
-
 ];
 
 @NgModule({
